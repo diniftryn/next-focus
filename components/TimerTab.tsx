@@ -10,7 +10,7 @@ export function TimerTab() {
   const [timer, setTimer] = useState({ pomodoroMinutes: 25, shortBreakMinutes: 5, longBreakMinutes: 15 });
 
   return (
-    <div className="flex justify-center text-center h-[200px]">
+    <div className="flex justify-center text-center h-full">
       <Tabs defaultValue="pomodoro" className="">
         <TabsList className="grid grid-cols-4 w-full">
           <TabsTrigger value="pomodoro">Pomodoro</TabsTrigger>

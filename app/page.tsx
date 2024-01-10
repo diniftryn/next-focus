@@ -10,7 +10,7 @@ export default function Home() {
     <main className="text-center">
       <Header />
 
-      <section className="py-20">
+      <section className="py-[60px]">
         <TimerTab />
       </section>
 
