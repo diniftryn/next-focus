@@ -32,7 +32,7 @@ export function TimerTab() {
           <Timer displayTime={timer.longBreakMinutes} />
         </TabsContent>
         <TabsContent value="setting">
-          <div className="flex justify-center text-center p-5">
+          <div className="flex justify-center text-center pt-[35px] pb-[1px]">
             <TimerSetting timer={timer} setTimer={setTimer} />
           </div>
         </TabsContent>

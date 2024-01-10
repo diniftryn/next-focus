@@ -44,7 +44,7 @@ export function TimerSetting({ timer, setTimer }: SettingFormProps) {
   }
 
   return (
-    <div className="py-4">
+    <div className="">
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
           <div className="flex space-x-4">
