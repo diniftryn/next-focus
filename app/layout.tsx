@@ -14,7 +14,7 @@ import { Toaster } from "@/components/ui/toaster";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "f[o]cus",
+  title: "Focus",
   description: "An app that helps you keep track of time while working on your tasks."
 };
 
