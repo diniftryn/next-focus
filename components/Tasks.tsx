@@ -53,7 +53,7 @@ const Tasks = () => {
               name="text"
               render={({ field }) => (
                 <FormItem>
-                  <Input className="w-[275px]" autoComplete="off" placeholder="Add Task" {...field} />
+                  <Input className="w-[80vw] md:max-w-[500px]" autoComplete="off" placeholder="Add Task" {...field} />
                 </FormItem>
               )}
             />
@@ -65,11 +65,11 @@ const Tasks = () => {
       <section className={tasks.length > 0 ? "flex flex-col items-center py-5" : ""}>
         {tasks &&
           tasks.map(task => (
-            <div className="grid grid-cols-6 text-start p-2 border w-[320px]">
-              <div className="col-start-1 col-end-1 px-1 ">
+            <div className="grid grid-cols-6 text-start p-2 border w-[90vw] md:max-w-[550px]">
+              <div className="flex items-center col-start-1 col-end-5 px-1">
                 <Checkbox />
+                <div className="pl-3">{task.text}</div>
               </div>
-              <div className="col-start-2 col-end-5">{task.text}</div>
               <div className="col-end-7 col-span-1 text-end px-2">
                 <button onClick={() => setTasks(tasks.filter(item => item.id !== task.id))}>x</button>
               </div>
